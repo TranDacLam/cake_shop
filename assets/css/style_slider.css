@@ -32,7 +32,7 @@
         transform: rotate(360deg);
     }
 }
-#slider1_container{
+#slider_container{
     visibility: hidden; 
     position: relative; 
     margin: 0 auto;
