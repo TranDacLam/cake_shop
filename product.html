@@ -11,13 +11,14 @@
     <script src="assets/js/jquery.min.1.11.0.js" type="text/javascript"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/product.js"></script>
 </head>
 <body>
     <header>
         <div id="top-bar-wrap">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-6 col-sm-6">
+                    <div class="col-xs-6 col-sm-6 top-bar-hotline">
                         <span class="top-bar-hotline"><i class="fas fa-phone"></i> HOTLINE:</span> 093 633 6806
                     </div>
                     <div class="col-xs-6 col-sm-6 top-bar-social">
@@ -56,7 +57,7 @@
                     <li class="dropdown mega-dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="product.html">SẢN PHẨM<span class="caret"></span></a>
                         <ul class="dropdown-menu mega-dropdown-menu">
-                            <li class="col-sm-3">
+                            <li class="col-xs-6 col-sm-3 slide-menu-product">
                                 <ul>
                                     <li class="dropdown-header">Bánh Mới Ra Lò</li>                            
                                     <div id="menCollection" class="carousel slide" data-ride="carousel">
@@ -107,7 +108,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="col-sm-3">
+                            <li class="col-xs-6 col-sm-3">
                                 <ul>
                                     <li class="dropdown-header">Bánh Sinh Nhật</li>
                                     <li><a href="#">Dâu tây</a></li>
@@ -120,7 +121,7 @@
                                     <li><a href="#">Mango db</a></li>
                                 </ul>
                             </li>
-                            <li class="col-sm-3">
+                            <li class=" col-xs-6 col-sm-3">
                                 <ul>
                                     <li class="dropdown-header">Bánh Mỳ</li>
                                     <li><a href="#">Bánh Mexico</a></li>
@@ -129,7 +130,7 @@
                                     <li><a href="#">Paris Gate</a></li>                          
                                 </ul>
                             </li>
-                            <li class="col-sm-3">
+                            <li class="col-xs-6 col-sm-3">
                                 <ul>
                                     <li class="dropdown-header">Bánh Cookies/Kẹo</li>
                                     <li><a href="#">Kẹo Nougat Handmade</a></li>
@@ -144,7 +145,7 @@
                     <li><a href="#">GIỚI THIỆU</a></li>
                     <li><a href="#">LIÊN HỆ</a></li>
                 </ul>
-                <ul class="nav navbar-nav menu-right navbar-right">
+                <ul class="nav navbar-nav menu-right navbar-right menu-form-search">
                     <li>
                         <form class="navbar-form form-seacrh-menu" role="search">
                             <div class="input-group">
@@ -182,48 +183,62 @@
                         <div class="group-collection" aria-expanded="true">
                             <div class="title-block dropdown-filter">
                                 <h3 class="title-group">Danh mục nhóm</h3>
+                                <i class="fa fa-minus flexbox-grid-default flexbox-justifyContent-center flexbox-alignItems-center" aria-hidden="true"></i>
                             </div>
                             <div class="filter-box">
                                 <ul id="menusidebarleft" class="menu-collection clearfix mb15">
                                     <li class="">
-                                        <a href="/collections/all" title="Lifestyle">Lifestyle</a>
+                                        <a href="/collections/all" title="Lifestyle">Bánh Sinh Nhật</a>
                                     </li>
                                     <li class="">
-                                        <a href="/collections/all" title="Running">Running</a>
+                                        <a href="/collections/all" title="Running">Bánh Bông Lan</a>
                                     </li>
                                     <li class="">
-                                        <a href="/collections/all" title="Basketball">Basketball</a>
+                                        <a href="/collections/all" title="Basketball">Bánh Handmade</a>
                                     </li>
                                     <li class="">
-                                        <a href="/collections/all" title="Football">Football</a>
+                                        <a href="/collections/all" title="Football">Socolate</a>
                                     </li>
                                     <li class="">
-                                        <a href="/collections/all" title="Gym &amp; Training">Gym &amp; Training</a>
+                                        <a href="/collections/all" title="Gym &amp; Training">Bánh Ngọt</a>
                                     </li>
                                     <li class="">
-                                        <a href="/collections/all" title="Skateboarding">Skateboarding</a>
+                                        <a href="/collections/all" title="Skateboarding">Kem Tươi</a>
                                     </li>
                                     <li class="">
-                                        <a href="/collections/all" title="Tennis">Tennis</a>
+                                        <a href="/collections/all" title="Tennis">Trà Sữa</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="group-collection" aria-expanded="true">
                             <div class="title-block dropdown-filter">
-                                <h3 class="title-group">Danh mục nhóm</h3>
+                                <h3 class="title-group">HOT</h3>
+                                <i class="fa fa-minus flexbox-grid-default flexbox-justifyContent-center flexbox-alignItems-center" aria-hidden="true"></i>
                             </div>
-                            <div class="filter-box">
+                            <div class="filter-box filter-image-hot">
                                 <ul class="filter-size clearfix">
-                                    <li>
-                                        <img src="assets/images/blog4.jpg" alt="">
+                                    <li class="hovereffect">
+                                        <img class="img-responsive" src="assets/images/pro_2.jpg" alt="">
+                                        <div class="overlay">
+                                           <h5>Bánh Dâu Tây</h5>
+                                           <a class="info" href="detail.html">Chi tiết <i class="fas fa-long-arrow-alt-right"></i></a>
+                                        </div>
                                     </li>
-                                    <li>
-                                        <img src="assets/images/blog2.jpg" alt="">
+                                    <li class="hovereffect">
+                                        <img class="img-responsive" src="assets/images/pro_6.jpg" alt="">
+                                        <div class="overlay">
+                                            <h5>Socola handmade</h5>
+                                           <a class="info" href="detail.html">Chi tiết <i class="fas fa-long-arrow-alt-right"></i></a>
+                                        </div>
                                     </li>
-                                    <li>
-                                        <img src="assets/images/blog1.jpg" alt="">
-                                    </li>     
+                                    <li class="hovereffect">
+                                        <img class="img-responsive" src="assets/images/pro_4.jpg" alt="">
+                                        <div class="overlay">
+                                            <h5>Bánh Sinh Nhật Heo Con</h5>
+                                           <a class="info" href="detail.html">Chi tiết <i class="fas fa-long-arrow-alt-right"></i></a>
+                                        </div>
+                                    </li>   
                                 </ul>
                             </div>
                         </div>
@@ -233,9 +248,9 @@
                 <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
                     <div class="row">
                         <div class="col-xs-12 pd5">
-                            <div class="group-collection">
+                            <div class="group-collection title-list-product">
                                 <div class="title-block">
-                                    <h1 class="title-group">Bánh Kem</h1>
+                                    <h1 class="title-group">Tất cả sản phẩm</h1>
                                     <div class="browse-tags pull-right hidden-xs">
                                         <span class="mr5">Sắp xếp theo:</span>
                                         <span class="custom-dropdown custom-dropdown--white">
@@ -414,22 +429,22 @@
             </div>
         </section>
     </div>
-    <footer class="site-footer">
+    <footer>
         <div class="container">
             <div class="row">
             <div class="col-xs-12 col-sm-12"><p class="bd-top-footer"></p></div>
             </div>
             <div class="row">
-                <div class="col-xs-6 col-sm-6">
+                <div class="col-xs-4 col-sm-4 col-md-6">
                     <p class="title-footer">CAKE SHOP</p>
                     <p>© 2018</p>
                 </div>
-                <div class="col-xs-3 col-sm-3">
+                <div class="col-xs-4 col-sm-4 col-md-3">
                     <p class="title-footer">Contact</p>
                     <p>+44 (0)161 832 5575</p>
                     <p>enquiries@thechase.co.uk</p>
                 </div>
-                <div class="col-xs-3 col-sm-3">
+                <div class="col-xs-4 col-sm-4 col-md-3 footer-social">
                     <p class="title-footer">Connect</p>
                     <ul> 
                         <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>

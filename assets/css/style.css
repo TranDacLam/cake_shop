@@ -242,3 +242,113 @@ footer ul li a:hover{
     padding: 0px 2px;
 }
 /*** End breadcrumb ***/
+
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
+}
+ 
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+ 
+}
+ 
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+ 
+}
+ 
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+ 
+}
+ 
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+ 
+}
+ 
+ 
+/*==========  Non-Mobile First Method  ==========*/
+ 
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .navbar ul>li {
+        margin: 0 5px;
+    }
+    .navbar-nav>li>.dropdown-menu{
+        left: 0;
+        width: 100%;
+    }
+}
+ 
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+ 
+}
+ 
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .slide-menu-product{
+        display: none;
+    }
+    .navbar ul>li{
+        margin: 0 0px;
+    }
+    .menu-form-search{
+        width: 170px;
+    }
+}
+@media only screen and (max-width : 767px) {
+    .navbar .navbar-toggle {
+        border-color: #333;
+    }
+    .navbar .navbar-toggle .icon-bar {
+        background-color: #333;
+    }
+    .dropdown-menu .divider{
+        background-color: #fff;
+        margin: 0;
+    }
+    .navbar-header{
+        border-bottom: 1px solid #333;
+    }
+    .menu-form-search{
+        width: 100%;
+        padding: 0 25px;
+    }
+}
+ 
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .top-bar-hotline{
+        font-size: 11px;
+    }
+    .middle-bar img{
+        width: 100%;
+    }
+    .mega-dropdown-menu .col-xs-6{
+        width: 100%;
+    }
+    footer .col-xs-4 {
+        width: 100%;
+        text-align: center;
+    }
+    footer .footer-social ul{
+        width: 45%;
+        margin: auto;
+    }
+    footer{
+        margin-top: 15px;
+    }
+}
+ 
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    #top-bar-wrap .top-bar-hotline,
+    #top-bar-wrap .top-bar-social{
+        font-size: 9px;
+    }
+}

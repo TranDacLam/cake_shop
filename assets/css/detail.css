@@ -951,7 +951,6 @@ input,input:focus {
   height: 400px;
 }
 .product-detail{
-	margin-top: 30px;
 	margin-bottom: 80px;
 }
 .product-detail .title-detail{
@@ -1133,6 +1132,34 @@ input,input:focus {
 	/* Css Layout */
 	.border-service-product {
 		border-bottom: 1px solid #e0e0e0;
+	}
+}
+@media ( max-width: 768px ) {
+	#mTS_1 {
+	    height: 309px;
+	}
+}
+@media ( max-width: 736px ) {
+	#mTS_1 {
+	    height: 108px;
+	}
+}
+@media ( max-width: 480px ) {
+	.des-comment-detail .media .media-object {
+	    max-width: 55px;
+	}
+	.des-comment-detail .btn-circle {
+	    font-size: 8px;
+	    padding: 5px 9px;
+	}
+}
+@media ( max-width: 320px ) {
+	.des-comment-detail .btn-circle {
+	    font-size: 7px;
+	    padding: 5px 9px;
+	}
+	.product-comment .reviews{
+		font-size: 12px;
 	}
 }
 /*/************************************** End Media.css *****************

@@ -2,13 +2,13 @@
     width: 100%;
 }
 .blog-custom{
-    padding-top: 50px;
+    padding-top: 5px;
     padding-bottom: 30px;
 }
 .blog-title h1{
     text-align: center;
     font-size: 22px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .blog-item-image {
     position: relative;
@@ -32,7 +32,6 @@
     text-transform: uppercase;
     font-size: 15px;
     font-weight: bold;
-    font-family: "SairaSemiCondensed-Medium", sans-serif;
 }
 .blog-item a {
     text-decoration: none;
@@ -46,7 +45,6 @@
     font-weight: normal;
     margin-bottom: 0;
     text-transform: none;
-    font-family: "Montserrat-Light", sans-serif;
 }
 .blog-content .blog-read-more a{
     font-weight: 400;
@@ -79,7 +77,6 @@
 }
 .blog-item .blog-read-more span {
     font-weight: bold;
-    font-family: "Montserrat-Light", sans-serif;
 }
 .blog-item .blog-read-more span:hover {
     color: #ff5400;
@@ -93,11 +90,7 @@ select.select-filter {
     padding: 5px;
     margin: 20px 0;
 }
-.filter-blog label {
-    font-family: "Montserrat-Medium", sans-serif; 
-}
 .blog-custom input, .blog-custom select, .blog-custom textarea{
-    font-family: "Montserrat-Light", sans-serif;
     line-height: 22px;
 }
 @media only screen and (max-width: 1024px){
@@ -108,10 +101,14 @@ select.select-filter {
 
 }
 @media only screen and (max-width: 768px){
-
+    .blog-item img {
+        height: 185px;
+    }
 }
 @media only screen and (max-width: 736px){
-
+    .blog-item img {
+        height: 233px;
+    }
 }
 @media only screen and (max-width: 414px){
 
