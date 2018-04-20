@@ -1,4 +1,7 @@
 /* *** HEADER *** */
+img {
+    max-width: 100%;
+}
 header{
     width: 100%;
 }
