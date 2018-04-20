@@ -1,0 +1,134 @@
+.main-blog{
+    width: 100%;
+}
+.blog-custom{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.blog-title h1{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+.blog-item-image {
+    position: relative;
+    width: 100%;
+}
+.blog-item-image:after {
+  content :"";
+  display:block;
+  padding-top: 2%;
+}
+.blog-item img {
+    width: 100%;
+    height: 233px;
+}
+.blog-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.blog-content .blog-name{
+    color: #0e1d2f;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "SairaSemiCondensed-Medium", sans-serif;
+}
+.blog-item a {
+    text-decoration: none;
+}
+.blog-item p{
+    color: #0e1d2f;
+}
+.blog-content .blog-decs{
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 0;
+    text-transform: none;
+    font-family: "Montserrat-Light", sans-serif;
+}
+.blog-content .blog-read-more a{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0em;
+    text-transform: none;
+    text-decoration: none;
+    color: #1d1d1d;
+}
+.blog-content .blog-read-more a:hover{
+    color: #ff5400;
+}
+.blog-item {
+    margin-bottom: 30px;
+    min-height: 400px;
+}
+.blog-footer{
+    margin: 50px 0;
+}
+.blog-footer .title-blog-footer{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.blog-footer img{
+    width: 100%;
+}
+.blog-item .blog-read-more{
+    margin-top: 10px;
+}
+.blog-item .blog-read-more span {
+    font-weight: bold;
+    font-family: "Montserrat-Light", sans-serif;
+}
+.blog-item .blog-read-more span:hover {
+    color: #ff5400;
+}
+.filter-blog {
+    float: right;
+}
+select.select-filter {
+    width: 200px;
+    background: transparent;
+    padding: 5px;
+    margin: 20px 0;
+}
+.filter-blog label {
+    font-family: "Montserrat-Medium", sans-serif; 
+}
+.blog-custom input, .blog-custom select, .blog-custom textarea{
+    font-family: "Montserrat-Light", sans-serif;
+    line-height: 22px;
+}
+@media only screen and (max-width: 1024px){
+    .load-more:hover {
+        border: none;
+        background: #7e8eaa;
+    }
+
+}
+@media only screen and (max-width: 768px){
+
+}
+@media only screen and (max-width: 736px){
+
+}
+@media only screen and (max-width: 414px){
+
+}
+@media only screen and (max-width: 375px){
+
+}
+@media only screen and (max-width: 767px) and (min-width: 480px) and (orientation: landscape) {
+    .blog-content > div {
+        float: left;
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 320px){
+    select.select-filter {
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+}
