@@ -50,6 +50,13 @@
                 <a class="navbar-brand" href="#">
                     <img src="assets/images/logofix.png" alt="">
                 </a>
+                <a href="#" title="Giỏ hàng" class="responsive-menu-cart-account">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+                <a href="#" title="thông tin tài khoản" class="responsive-menu-cart-account">
+                    <i class="fas fa-user"></i>
+                </a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav menu-left">
@@ -141,11 +148,31 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="#">GIỚI THIỆU</a></li>
-                    <li><a href="#">LIÊN HỆ</a></li>
+                    <li class="menu-pc"><a href="blog.html">BLOG</a></li>
+                    <li class="menu-pc"><a href="#">GIỚI THIỆU</a></li>
+                    <li class="menu-pc"><a href="#">LIÊN HỆ</a></li>
+                    <li class="dropdown responsive-ipad-menu">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">KHÁC
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="#">GIỚI THIỆU</a></li>
+                            <li><a href="#">LIÊN HỆ</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav menu-right navbar-right menu-form-search">
+                    <li class="menu-account">
+                        <a href="#" title="thông tin tài khoản">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                    <li class="menu-cart">
+                        <a href="#" title="Giỏ hàng">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cart-count">0</span>
+                        </a>
+                    </li>
                     <li>
                         <form class="navbar-form form-seacrh-menu" role="search">
                             <div class="input-group">
@@ -157,6 +184,7 @@
                             </div>
                         </form>
                     </li>
+                    
                 </ul>
             </div>
         </div>
@@ -275,15 +303,16 @@
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-wrapper product-resize fixheight">
                             <div class="product-information">
                                 <div class="product-detail clearfix">
+                                    <img class="hot" src="assets/images/new.png" alt="Hot">
                                     <div class="product-image image-resize" >
-                                        <a href="/collections/giay-nam/products/nike-air-max-1-ultra-essential" title="Nike Air Max 1 Ultra Essential">
+                                        <a href="detail.html" title="Nike Air Max 1 Ultra Essential">
                                             <picture>
                                                 <img src="assets/images/pro_2.jpg" alt="Nike Air Max 1 Ultra Essential">
                                             </picture>
                                         </a>
                                     </div>
                                     <div class="product-info">
-                                        <a href="/collections/giay-nam/products/nike-air-max-1-ultra-essential" title="Nike Air Max 1 Ultra Essential">
+                                        <a href="detail.html" title="Nike Air Max 1 Ultra Essential">
                                             <h2>Dâu Tây Bơ</h2>
                                         </a>
                                         <p class="product-vendor">Bánh Sinh Nhật</p>
@@ -312,15 +341,16 @@
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-wrapper product-resize fixheight">
                             <div class="product-information">
                                 <div class="product-detail clearfix">
+                                    <img class="hot" src="assets/images/hot.png" alt="Hot">
                                     <div class="product-image image-resize" >
-                                        <a href="/collections/giay-nam/products/nike-air-max-1-ultra-essential" title="Nike Air Max 1 Ultra Essential">
+                                        <a href="detail.html" title="Nike Air Max 1 Ultra Essential">
                                             <picture>
                                                 <img src="assets/images/pro_3.jpg" alt="Nike Air Max 1 Ultra Essential">
                                             </picture>
                                         </a>
                                     </div>
                                     <div class="product-info">
-                                        <a href="/collections/giay-nam/products/nike-air-max-1-ultra-essential" title="Nike Air Max 1 Ultra Essential">
+                                        <a href="detail.html" title="Nike Air Max 1 Ultra Essential">
                                             <h2>Dâu Tây Bơ</h2>
                                         </a>
                                         <p class="product-vendor">Bánh Sinh Nhật</p>
@@ -350,14 +380,14 @@
                             <div class="product-information">
                                 <div class="product-detail clearfix">
                                     <div class="product-image image-resize" >
-                                        <a href="/collections/giay-nam/products/nike-air-max-1-ultra-essential" title="Nike Air Max 1 Ultra Essential">
+                                        <a href="detail.html" title="Nike Air Max 1 Ultra Essential">
                                             <picture>
                                                 <img src="assets/images/pro_4.jpg" alt="Nike Air Max 1 Ultra Essential">
                                             </picture>
                                         </a>
                                     </div>
                                     <div class="product-info">
-                                        <a href="/collections/giay-nam/products/nike-air-max-1-ultra-essential" title="Nike Air Max 1 Ultra Essential">
+                                        <a href="detail.html" title="Nike Air Max 1 Ultra Essential">
                                             <h2>Dâu Tây Bơ</h2>
                                         </a>
                                         <p class="product-vendor">Bánh Sinh Nhật</p>
@@ -386,15 +416,16 @@
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-wrapper product-resize fixheight">
                             <div class="product-information">
                                 <div class="product-detail clearfix">
+                                    <img class="hot" src="assets/images/hot.png" alt="Hot">
                                     <div class="product-image image-resize" >
-                                        <a href="/collections/giay-nam/products/nike-air-max-1-ultra-essential" title="Nike Air Max 1 Ultra Essential">
+                                        <a href="detail.html" title="Nike Air Max 1 Ultra Essential">
                                             <picture>
                                                 <img src="assets/images/pro_5.jpg" alt="Nike Air Max 1 Ultra Essential">
                                             </picture>
                                         </a>
                                     </div>
                                     <div class="product-info">
-                                        <a href="/collections/giay-nam/products/nike-air-max-1-ultra-essential" title="Nike Air Max 1 Ultra Essential">
+                                        <a href="detail.html" title="Nike Air Max 1 Ultra Essential">
                                             <h2>Dâu Tây Bơ</h2>
                                         </a>
                                         <p class="product-vendor">Bánh Sinh Nhật</p>

@@ -446,6 +446,13 @@
 .product-lists img{
     width: 100%;
 }
+.product-detail img.hot, .product-detail img.new{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 25%;
+}
 
 /*** Media ***/
 @media ( max-width: 767px ) {

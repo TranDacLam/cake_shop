@@ -226,6 +226,26 @@ footer ul li a:hover{
 .scrollToTop:hover{
     text-decoration:none;
 }
+.menu-account, .menu-cart{
+    font-size: 20px
+}
+#cart-count{
+    background: #ff6517;
+    color: #fff;
+    padding: 0px 6px;
+    border-radius: 100%;
+    position: absolute;
+    left: 33px;
+    font-size: 12px;
+    line-height: 20px;
+    top: 2px;
+}
+.navbar .nav .responsive-ipad-menu{
+    display: none;
+}
+.responsive-menu-cart-account{
+    display: none;
+}
 
 /*** breadcrumb ***/
 .header-navigate .breadcrumb {
@@ -300,8 +320,14 @@ footer ul li a:hover{
     .navbar ul>li{
         margin: 0 0px;
     }
-    .menu-form-search{
-        width: 170px;
+    .form-seacrh-menu{
+        width: 175px;
+    }
+    .navbar .nav .responsive-ipad-menu{
+        display: block;
+    }
+    .navbar .nav .menu-pc{
+        display: none;
     }
 }
 @media only screen and (max-width : 767px) {
@@ -320,7 +346,38 @@ footer ul li a:hover{
     }
     .menu-form-search{
         width: 100%;
-        padding: 0 25px;
+        padding: 0 15px;
+    }
+    .navbar .nav .responsive-ipad-menu{
+        display: block;
+    }
+    .navbar .nav .menu-pc{
+        display: none;
+    }
+    .navbar .nav .menu-account, .navbar .nav .menu-cart{
+        display: none;
+    }
+    .navbar ul.menu-right>li.menu-account,
+    .navbar ul.menu-right>li.menu-cart{
+        margin-top: 10px;
+    }
+    .navbar-form{
+        margin-left: 0px;
+    }
+    .navbar .navbar-nav>li.active{
+        border-bottom: none;
+        background-color: #d0caca;
+    }
+    .responsive-menu-cart-account{
+        display: block;
+        font-size: 25px;
+        float: right;
+        margin-right: 30px;
+        margin-top: 8px;
+    }
+    #cart-count{
+        left: auto;
+        margin-left: 24px
     }
 }
  

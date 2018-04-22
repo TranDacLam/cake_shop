@@ -53,6 +53,13 @@
                 <a class="navbar-brand" href="#">
                     <img src="assets/images/logofix.png" alt="">
                 </a>
+                <a href="#" title="Giỏ hàng" class="responsive-menu-cart-account">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+                <a href="#" title="thông tin tài khoản" class="responsive-menu-cart-account">
+                    <i class="fas fa-user"></i>
+                </a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav menu-left">
@@ -144,11 +151,31 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="#">GIỚI THIỆU</a></li>
-                    <li><a href="#">LIÊN HỆ</a></li>
+                    <li class="menu-pc"><a href="blog.html">BLOG</a></li>
+                    <li class="menu-pc"><a href="#">GIỚI THIỆU</a></li>
+                    <li class="menu-pc"><a href="#">LIÊN HỆ</a></li>
+                    <li class="dropdown responsive-ipad-menu">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">KHÁC
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="#">GIỚI THIỆU</a></li>
+                            <li><a href="#">LIÊN HỆ</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav menu-right navbar-right menu-form-search">
+                    <li class="menu-account">
+                        <a href="#" title="thông tin tài khoản">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                    <li class="menu-cart">
+                        <a href="#" title="Giỏ hàng">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cart-count">0</span>
+                        </a>
+                    </li>
                     <li>
                         <form class="navbar-form form-seacrh-menu" role="search">
                             <div class="input-group">
@@ -160,6 +187,7 @@
                             </div>
                         </form>
                     </li>
+                    
                 </ul>
             </div>
         </div>
@@ -260,98 +288,9 @@
 						<i class="fas fa-star"></i>
 					</span>
 				</div>	
-                <div class="category"><h4>Danh Mục: Bánh Phông Lan</h4></div>
+                <div class="category"><h4><span>Danh Mục:</span> Bánh Phông Lan</h4></div>
 				<div class="product-price" id="price-preview"><span>4,590,000₫</span></div>		
 				<form id="add-item-form" action="/cart/add" method="post" class="variants clearfix variant-style">	
-					<div class="select clearfix">
-						<div class="selector-wrapper opt1">
-							<label>Màu sắc</label>
-							<ul class="data-opt1 clearfix style-variant-template">
-								<li class=" trang trang trang trang">
-									<label>
-										<input checked="checked" type="radio" value="Trắng" name="option1">
-										<span>Trắng</span>
-									</label>
-								</li>
-								<li class=" xanh-den xanh-den xanh-den xanh-den">
-									<label><input type="radio" value="Xanh Đen" name="option1">
-										<span>Xanh Đen</span>
-									</label>
-								</li>
-							</ul>
-						</div>
-						<div class="selector-wrapper opt2">
-							<label>Kích thước</label>
-							<ul class="data-opt2 clearfix style-variant-template">
-								<li class=" trang xanh-den" style="display: list-item;">
-									<label>
-										<input checked="checked" type="radio" value="40" name="option2">
-										<span>40</span>
-									</label>
-								</li>
-								<li class=" trang xanh-den" style="display: list-item;">
-									<label>
-										<input type="radio" value="41" name="option2">
-										<span>41</span>
-									</label>
-								</li>
-								<li class=" trang xanh-den" style="display: list-item;">
-									<label>
-										<input type="radio" value="42" name="option2">
-										<span>42</span>
-									</label>
-								</li
-								><li class=" trang xanh-den" style="display: list-item;">
-									<label>
-										<input type="radio" value="43" name="option2">
-										<span>43</span>
-									</label>
-								</li>
-							</ul>
-						</div>			
-						<style>
-							.selector-wrapper:not(.opt1):not(.opt1-quickview):not(.opt2):not(.opt2-quickview):not(.opt3):not(.opt3-quickview) {
-							display: none;
-							}
-						</style>
-						<div class="selector-wrapper">
-							<label for="product-select-option-0">Màu sắc</label>
-							<span class="custom-dropdown custom-dropdown-white">
-								<select class="single-option-selector custom-dropdown-select custom-dropdown-white-select" data-option="option1" id="product-select-option-0">
-									<option value="Trắng">Trắng</option>
-									<option value="Xanh Đen">Xanh Đen</option>
-								</select>
-							</span>
-						</div>
-						<div class="selector-wrapper">
-							<label for="product-select-option-1">Kích thước</label>
-							<span class="custom-dropdown custom-dropdown-white">
-								<select class="single-option-selector custom-dropdown-select custom-dropdown-white-select" data-option="option2" id="product-select-option-1">
-									<option value="40">40</option>
-									<option value="41">41</option>
-									<option value="42">42</option>
-									<option value="43">43</option>
-								</select>
-							</span>
-						</div>
-						<select id="product-select" name="id" style="display:none">
-							<option value="1009453123">Trắng / 40 - 4,590,000₫</option>
-							
-							<option value="1009453124">Trắng / 41 - 4,590,000₫</option>
-							
-							<option value="1009453125">Trắng / 42 - 4,590,000₫</option>
-							
-							<option value="1009453126">Trắng / 43 - 4,590,000₫</option>
-							
-							<option value="1009453127">Xanh Đen / 40 - 4,590,000₫</option>
-							
-							<option value="1009453128">Xanh Đen / 41 - 4,590,000₫</option>
-							
-							<option value="1009453129">Xanh Đen / 42 - 4,590,000₫</option>
-							
-							<option value="1009453130">Xanh Đen / 43 - 4,590,000₫</option> 
-						</select>
-					</div>
 					<div class="select-wrapper clearfix ">
 						<label>Số lượng</label>
 						<div class="input-group">
@@ -383,53 +322,69 @@
 						</div>
 					</div>
 				</div>
-				<div class="tag-wrapper">
-					<label>
-						Tags:
-					</label>
-					<ul class="tags">
-						<li class="">
-							<a href="/collections/all/Men">Men</a>
-						</li>
-					</ul>
-				</div>
 			</div>
-			<div class="col-lg-2 col-xs-12 pd-none-box-service mb15 text-center">
-				<div class="box-service-product">
-					<div class="header-box-service-product text-center">
-						<div class="title">TIêu Chí Của Chúng Tôi</div>
-					</div>
-					<div class="content-box-service-product row">
-						<div class="col-lg-12 col-sm-3 col-xs-12">
-							<div class="border-service-product">
-								<div class="flexbox-grid-default">
-									<div class="flexbox-content des-service-product">
-										<div class="title">NGON</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12 col-sm-3 col-xs-12">
-							<div class="border-service-product">
-								<div class="flexbox-grid-default">
-									<div class="flexbox-content des-service-product">
-										<div class="title">BỔ</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12 col-sm-3 col-xs-12">
-							<div class="border-service-product">
-								<div class="flexbox-grid-default">
-									<div class="flexbox-content des-service-product">
-										<div class="title">RẺ</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<div class="col-lg-2 col-xs-12 pd-none-box-service mb15">
+                <div class="box-service-product">
+                    <div class="header-box-service-product text-center">
+                        <div class="title">Sẽ có tại nhà bạn</div>
+                        <div class="content">từ 1-7 ngày làm việc</div>
+                    </div>
+                    <div class="content-box-service-product row">
+                        <div class="col-lg-12 col-sm-3 col-xs-12">
+                            <div class="border-service-product">
+                                <div class="flexbox-grid-default">
+                                    <div class="flexbox-auto-45px flexbox-align-self-center">
+                                        <img src="assets/images/icon-service-1.png">
+                                    </div>
+                                    <div class="flexbox-content des-service-product">
+                                        <div class="title">Giao hàng miễn phí</div>
+                                        <div class="content">Sản phẩm trên 300,000đ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-3 col-xs-12">
+                            <div class="border-service-product">
+                                <div class="flexbox-grid-default">
+                                    <div class="flexbox-auto-45px flexbox-align-self-center">
+                                        <img src="assets/images/icon-service-2.png">
+                                    </div>
+                                    <div class="flexbox-content des-service-product">
+                                        <div class="title">Đổi trả miễn phí</div>
+                                        <div class="content">Đổi trả miễn phí 30 ngày</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-3 col-xs-12">
+                            <div class="border-service-product">
+                                <div class="flexbox-grid-default">
+                                    <div class="flexbox-auto-45px flexbox-align-self-center">
+                                        <img src="assets/images/icon-service-3.png">
+                                    </div>
+                                    <div class="flexbox-content des-service-product">
+                                        <div class="title">Thanh toán</div>
+                                        <div class="content">Thanh toán khi nhận hàng</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-3 col-xs-12">
+                            <div class="border-service-product">
+                                <div class="flexbox-grid-default">
+                                    <div class="flexbox-auto-45px flexbox-align-self-center">
+                                        <img src="assets/images/icon-service-4.png">
+                                    </div>
+                                    <div class="flexbox-content des-service-product">
+                                        <div class="title">Hỗ trợ online</div>
+                                        <div class="content">093.855.9501</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 		</div>
         <div class="row des-comment-detail">
             <div class="col-lg-8 col-xs-12 pd5">
@@ -452,12 +407,12 @@
                         </li>
                     </ul>            
                     <div class="tab-content">
-                        <div class="tab-pane"  id="description">                                      
+                        <div class="tab-pane active"  id="description">                                      
                             <div class="container-fluid product-description-wrapper">
                                 <p><br></p>
                             </div>
                         </div>
-                        <div class="tab-pane active" id="comments-logout">                
+                        <div class="tab-pane" id="comments-logout">                
                             <ul class="media-list">
                               <li class="media">
                                 <a class="pull-left" href="#">

@@ -113,10 +113,11 @@
 	color: #da4343;
 	font-style: italic;
 }
-.item-grid img.hot {
+.item-grid img.hot, .item-grid img.new, 
+.hovereffect img.hot, .hovereffect img.new{
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 1;
 }
 
