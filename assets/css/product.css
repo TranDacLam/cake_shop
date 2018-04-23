@@ -531,6 +531,11 @@
     }
     
 }
+@media ( max-width: 480px ) {
+    .title-list-product .browse-tags{
+        margin: 15px 0;
+    }
+}
 @media ( min-width: 768px ) {
     /* Css Chung */
     #map_canvas iframe {
