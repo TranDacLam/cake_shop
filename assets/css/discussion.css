@@ -1,0 +1,85 @@
+.list-topic{
+	margin-top: 50px;
+	margin-bottom: 70px;
+}
+.discussion-title h1{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+a {
+    color: #ec3d79;
+    text-decoration: none;
+    transition: color .3s ease-out;
+}
+.row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.topic .topic__heading {
+    margin-bottom: 10px;
+}
+.topic .topic__avatar {
+    max-width: 40px;
+    float: left;
+    margin-right: 10px;
+}
+.topic .topic__avatar img {
+    width: 40px;
+    height: 40px;
+}
+.topic .topic__user-name {
+    color: #333;
+    font-weight: 700;
+}
+.topic .topic__time {
+    color: #999;
+}
+.topic .topic__title {
+    float: left;
+    color: #333;
+    font-weight: 700;
+}
+h3.topic__title {
+    font-size: 14px;
+    margin: 0;
+}
+.topic .topic__views {
+    color: #333;
+}
+.topic .topic__latest-comment-content, .topic .topic__short-desc {
+    color: #666;
+}
+.tool-sidebar, .topic .topic__border {
+    border-bottom: 1px solid #eaeaea;
+}
+.topic .topic__border {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+.topic .topic__comment, .topic .topic__views {
+    margin-left: 10px;
+}
+.topic .topic__comment {
+    color: #23cdb7;
+}
+.topic .topic__views {
+    color: #333;
+}
+.topic .topic__comment, .topic .topic__views {
+    margin-left: 10px;
+}
+.topic .topic__comment-name {
+    margin-left: 5px;
+    color: #333;
+}
+.topic .topic__title:hover {
+    color: #ec3d79;
+}
+.no-touch a:focus, a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+a:hover {
+    color: #c91452;
+}

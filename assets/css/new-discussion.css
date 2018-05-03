@@ -1,0 +1,97 @@
+.new-discussion{
+	margin-bottom: 70px;
+}
+.control-panel__inner{
+    margin-top: 30px;
+}
+.control-panel__item:first-child {
+    padding-top: 0;
+}
+.heading-text--center {
+    text-align: center;
+}
+.heading-text {
+    position: relative;
+    margin-bottom: 10px;
+}
+.heading-text .heading-text__back-btn {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+a {
+    color: #ec3d79;
+    text-decoration: none;
+    transition: color .3s ease-out;
+}
+.heading-text .heading-text__back-icon {
+    float: left;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #ec3d79;
+    border: 1px solid #ec3d79;
+    color: #fff;
+    font-size: 1.1428571429em;
+    line-height: 20px;
+    text-align: center;
+    transition: all .3s ease-out;
+}
+.heading-text .heading-text__back-text {
+    color: #666;
+    font-size: 1.1428571429em;
+    font-weight: 300;
+}
+.heading-text--center .heading-text__title {
+    float: none;
+}
+.heading-text .heading-text__title {
+    font-size: 22px;
+    font-weight: 300;
+    float: left;
+}
+.control-panel .control-panel__body {
+    padding-top: 20px;
+}
+.form-horizontal--custom .control-label {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400;
+    padding-top: 11px;
+}
+.form-control {
+    height: 45px;
+}
+.form-horizontal--custom .control-label {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400;
+    padding-top: 11px;
+}
+.heading-text--center .heading-text__title {
+    float: none;
+}
+.btn-marry {
+    background-color: rgb(236, 61, 121);
+    color: rgb(255, 255, 255);
+    border-color: rgb(236, 61, 121);
+    transition: all 0.3s ease-out;
+}
+.btn, .btn-marry {
+    height: 45px;
+    padding: 10px 12px;
+}
+a:focus, a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+.heading-text .heading-text__back-btn:hover .heading-text__back-icon {
+    color: #ec3d79;
+    background: #fff;
+}
+.heading-text .heading-text__back-btn:hover .heading-text__back-text {
+    color: #ec3d79;
+}
