@@ -53,5 +53,12 @@ $(document).ready(function(){
 	    zoomImage.data('zoom-image', url_image);
 	    // Reinitialize EZ
 	    zoomImage.elevateZoom({scrollZoom : true});
-	})
+	});
+
+
+	// Comment
+	$('.reply-btn').on('click', function(){
+		var comment_id = $(this).attr('data-id-comment');
+		$('#Reply-customer form .comment-parrent').val(comment_id);
+	});
 });

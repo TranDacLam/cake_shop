@@ -391,13 +391,13 @@ input,input:focus {
 .quickview-information .hook-reviews, .information-product .hook-reviews {
 	padding: 0;
 }
-.hook-reviews .rating .fas {
+.hook-reviews .rating .fas, #reviews .rating .fas {
 	display: inline-block;
 }
-.hook-reviews .rating .fas::before {
+.hook-reviews .rating .fas::before, #reviews .rating .fas::before {
 	color: #d5d5d5;
 }
-.hook-reviews .rating .fas.star-full::before {
+.hook-reviews .rating .fas.star-full::before, #reviews .rating .fas.star-full::before {
 	color: #ffae00;
 }
 .product-wrapper .product-info .price-new {
@@ -727,6 +727,9 @@ input,input:focus {
 	border: solid 1px #E5E5E5;
 	border-top: none;
 }
+#description img{
+	width: 100%;
+}
 #description iframe {
 	width: 100%;
 }
@@ -948,7 +951,7 @@ input,input:focus {
 
 /* Custom  */
 #mTS_1{
-  height: 323px;
+  height: 375px;
 }
 .product-detail{
 	margin-bottom: 80px;
@@ -980,18 +983,25 @@ input,input:focus {
 .des-comment-detail .reviews {
     color: #555;    
     font-weight: bold;
-    margin: 10px auto 20px;
+    margin: 0px auto 5px;
+}
+.reply-every-comment .reviews{
+	margin-bottom: 15px;
+}
+#reviews .review-rating{
+	margin-bottom: 10px;
 }
 .des-comment-detail .notes {
     color: #999;
     font-size: 12px;
 }
-.des-comment-detail .media .media-object { max-width: 120px; }
+.des-comment-detail .media .media-object { max-width: 60px; }
 .des-comment-detail .media-body { position: relative; }
 .des-comment-detail .media-date { 
     position: absolute; 
     right: 25px;
     top: 25px;
+    font-size: 13px;
 }
 .des-comment-detail .media-date li { padding: 0; }
 .des-comment-detail .media-date li:first-child:before { content: ''; }
@@ -1000,7 +1010,7 @@ input,input:focus {
     margin-left: -2px; 
     margin-right: 2px;
 }
-.des-comment-detail .media-comment { margin-bottom: 20px; }
+.des-comment-detail .media-comment { margin-bottom: 15px; }
 .des-comment-detail .media-replied { margin: 0 0 20px 50px; }
 .des-comment-detail .media-replied .media-heading { padding-left: 6px; }
 
@@ -1161,6 +1171,9 @@ input,input:focus {
 	.des-comment-detail .btn-circle {
 	    font-size: 8px;
 	    padding: 5px 9px;
+	}
+	.des-comment-detail .media-date{
+		display: none;
 	}
 }
 @media ( max-width: 320px ) {
