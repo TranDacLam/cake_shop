@@ -6,11 +6,12 @@
     <title>SHOP CAKE</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/blog_detail.css">
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/blog-detail.js"></script>
 </head>
 <body>
     <header>
@@ -52,9 +53,6 @@
                 <a href="#" title="Giỏ hàng" class="responsive-menu-cart-account">
                     <i class="fas fa-shopping-cart"></i>
                     <span id="cart-count">0</span>
-                </a>
-                <a href="#" title="thông tin tài khoản" class="responsive-menu-cart-account">
-                    <i class="fas fa-user"></i>
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
@@ -190,11 +188,6 @@
                             </div>
                         </form>
                     </li>
-                    <li class="menu-account">
-                        <a href="#" title="thông tin tài khoản">
-                            <i class="fas fa-user"></i>
-                        </a>
-                    </li>
                     <li class="menu-cart">
                         <a href="#" title="Giỏ hàng">
                             <i class="fas fa-shopping-cart"></i>
@@ -293,6 +286,155 @@
                     </a>
                 </div>
             </div>
+        </div>
+        <div class="container" id="comments">
+            <div class='related-blog-title'>
+                <h3 class="title"> BÌNH LUẬN</h3>
+            </div>
+            <div class="main-article__discuss">
+                <ul class="media-list">
+                  <li class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg" alt="profile">
+                    </a>
+                    <div class="media-body">
+                        <div class="well well-lg">
+                            <h5 class="media-heading text-uppercase reviews">Marco </h5>
+                            <ul class="media-date text-uppercase reviews list-inline">
+                                <li class="dd">22</li>
+                                <li class="mm">09</li>
+                                <li class="aaaa">2014</li>
+                            </ul>
+                            <p class="media-comment">
+                                Great snippet! Thanks for sharing.
+                            </p>
+                            <button type="button" class="btn btn-info btn-circle text-uppercase reply-btn"  data-id-comment="1" data-id-discussion="11">
+                            <i class="fas fa-share"></i> Reply</button>
+                            <a class="btn btn-warning btn-circle text-uppercase" data-toggle="collapse" href="#reply-1"><i class="fas fa-comment"></i> 1 comment</a>
+                      </div>              
+                    </div>
+                    <div class="collapse reply-every-comment" id="reply-1">
+                        <ul class="media-list">
+                            <li class="media media-replied">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/ManikRathee/128.jpg" alt="profile">
+                                </a>
+                                <div class="media-body">
+                                  <div class="well well-lg">
+                                        <h5 class="media-heading text-uppercase reviews"><i class="fas fa-share"></i> Dao Meo</h5>
+                                        <ul class="media-date text-uppercase reviews list-inline">
+                                            <li class="dd">22</li>
+                                            <li class="mm">09</li>
+                                            <li class="aaaa">2014</li>
+                                        </ul>
+                                        <p class="media-comment">
+                                            Thank you Guys!
+                                        </p>
+                                    </div>              
+                                </div>
+                            </li>
+                        </ul>  
+                    </div>
+                </li>          
+                <li class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/kurafire/128.jpg" alt="profile">
+                    </a>
+                    <div class="media-body">
+                      <div class="well well-lg">
+                            <h5 class="media-heading text-uppercase reviews">Nico</h5>
+                            <ul class="media-date text-uppercase reviews list-inline">
+                                <li class="dd">22</li>
+                                <li class="mm">09</li>
+                                <li class="aaaa">2014</li>
+                            </ul>
+                            <p class="media-comment">
+                                I'm looking for that. Thanks!
+                            </p>
+                            <button type="button" class="btn btn-info btn-circle text-uppercase reply-btn"  data-id-comment="2" data-id-discussion="11"><i class="fas fa-share"></i> Reply</button>
+                        </div>              
+                    </div>
+                    <div class="collapse reply-every-comment" id="reply-2">
+                        <ul class="media-list">
+                            <li class="media media-replied">
+                            </li>
+                        </ul>  
+                    </div>
+                  </li>
+                  <li class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/lady_katherine/128.jpg" alt="profile">
+                    </a>
+                    <div class="media-body">
+                      <div class="well well-lg">
+                            <h5 class="media-heading text-uppercase reviews">Kriztine</h5>
+                            <ul class="media-date text-uppercase reviews list-inline">
+                                <li class="dd">22</li>
+                                <li class="mm">09</li>
+                                <li class="aaaa">2014</li>
+                            </ul>
+                            <p class="media-comment">
+                                Yehhhh... Thanks for sharing.
+                            </p>
+                            <button type="button" class="btn btn-info btn-circle text-uppercase reply-btn" data-id-comment="3" data-id-discussion="11"><i class="fas fa-share"></i> Reply</button>
+                            <a class="btn btn-warning btn-circle text-uppercase" data-toggle="collapse" href="#reply-3"><i class="fas fa-comment"></i> 1 comment</a>
+                        </div>              
+                    </div>
+                    <div class="collapse reply-every-comment" id="reply-3">
+                        <ul class="media-list">
+                            <li class="media media-replied">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/jackiesaik/128.jpg" alt="profile">
+                                </a>
+                                <div class="media-body">
+                                    <div class="well well-lg">
+                                        <h5 class="media-heading text-uppercase reviews"><i class="fas fa-share"></i> Long thien</h5>
+                                        <ul class="media-date text-uppercase reviews list-inline">
+                                            <li class="dd">22</li>
+                                            <li class="mm">09</li>
+                                            <li class="aaaa">2014</li>
+                                        </ul>
+                                        <p class="media-comment">
+                                            Good!
+                                        </p>
+                                  </div>              
+                                </div>
+                            </li>
+                        </ul>  
+                    </div>
+                  </li>
+                </ul>
+                <div class="wp-pagenavi"></div>
+                <hr>
+                    <div class="comment-item comment-item--form popup-white zoom-anim-dialog">
+                        <form>
+                            <div class="col-md-6 form-line">
+                                <div class="form-group">
+                                    <label for="exampleInputUsername">Tên</label>
+                                    <input type="text" class="form-control" id="" placeholder=" Enter Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email">
+                                </div>  
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for ="description"> Comment</label>
+                                    <textarea  class="form-control" id="description" rows="5" placeholder="Enter Your Message"></textarea>
+                                </div>
+                            </div>
+                            <input type="hidden" name="disscussion_id">
+                            <div class="col-md-12 text-center">
+                                <div>
+                                    <button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Gửi bình luận</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr>
         </div>
     </div>
 

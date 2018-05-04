@@ -356,6 +356,39 @@
   transform: translate3d(0,0,0);
 }
 
+
+.discussion{
+    margin-bottom: 70px;
+}
+.discussion .title-center {
+    font-size: 25px;
+    color: #00ab39;
+    border-bottom: 1px solid;
+    position: relative;
+}
+.discussion a {
+    float: left;
+    color: #ec3d79;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0;
+    line-height: 18px;
+}
+.discussion a {
+    text-decoration: none;
+    transition: color .3s ease-out;
+}
+.discussion .discussion-item{
+    margin-top: 15px;
+    min-height: 120px;
+}
+.discussion a:hover{
+    color: blue;
+}
+.discussion h4.topic__title{
+    margin-bottom: 35px;
+}
+
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
     
@@ -389,6 +422,9 @@
     .tt_frm {
         width: 432px;
     }
+    .discussion .discussion-item {
+        min-height: 140px;
+    }
 }
  
 /* Medium Devices, Desktops */
@@ -398,7 +434,22 @@
  
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
- 
+    .discussion .discussion-item {
+        min-height: 160px;
+    }
+}
+@media only screen and (max-width : 767px) {
+    .discussion .discussion-item {
+        min-height: auto;
+    }
+    .discussion h4.topic__title {
+         margin-bottom: 10px; 
+        padding-bottom: 10px;
+    }
+    .discussion .discussion-item p{
+        border-bottom: 1px solid #eee;
+        padding-bottom: 5px;
+    }
 }
  
 /* Extra Small Devices, Phones */ 

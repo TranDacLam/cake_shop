@@ -7,10 +7,10 @@
 .control-panel__item:first-child {
     padding-top: 0;
 }
-.heading-text--center {
+.new-discussion .heading-text--center {
     text-align: center;
 }
-.heading-text {
+.new-discussion .heading-text {
     position: relative;
     margin-bottom: 10px;
 }
@@ -21,7 +21,7 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-a {
+.new-discussion a {
     color: #ec3d79;
     text-decoration: none;
     transition: color .3s ease-out;
@@ -62,7 +62,7 @@ a {
     font-weight: 400;
     padding-top: 11px;
 }
-.form-control {
+.new-discussion .form-control {
     height: 45px;
 }
 .form-horizontal--custom .control-label {
@@ -74,17 +74,17 @@ a {
 .heading-text--center .heading-text__title {
     float: none;
 }
-.btn-marry {
+.new-discussion .btn-marry {
     background-color: rgb(236, 61, 121);
     color: rgb(255, 255, 255);
     border-color: rgb(236, 61, 121);
     transition: all 0.3s ease-out;
 }
-.btn, .btn-marry {
+.new-discussion .btn, .new-discussion .btn-marry {
     height: 45px;
     padding: 10px 12px;
 }
-a:focus, a:hover {
+.new-discussion a:focus, .new-discussion a:hover {
     text-decoration: none;
     outline: 0;
 }

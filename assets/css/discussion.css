@@ -7,12 +7,12 @@
     font-size: 22px;
     margin-bottom: 20px;
 }
-a {
+.discussion-list a {
     color: #ec3d79;
     text-decoration: none;
     transition: color .3s ease-out;
 }
-.row {
+.discussion-list .row {
     margin-left: -10px;
     margin-right: -10px;
 }
@@ -76,10 +76,10 @@ h3.topic__title {
 .topic .topic__title:hover {
     color: #ec3d79;
 }
-.no-touch a:focus, a:hover {
+.discussion-list a:focus, .discussion-list a:hover {
     text-decoration: none;
     outline: 0;
 }
-a:hover {
+.discussion-list a:hover {
     color: #c91452;
 }
