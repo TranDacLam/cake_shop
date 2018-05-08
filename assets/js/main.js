@@ -24,6 +24,12 @@ $(document).ready(function() {
     //     }
     // );
 
+    $('.nav .mega-dropdown').mouseenter(function() {
+        $(this).children('.mega-dropdown-menu').stop().slideDown('400')
+    }).mouseleave(function() {
+        $(this).children('.mega-dropdown-menu').stop().slideUp('400')
+    });
+
     jQuery(document).on('click', '.mega-dropdown', function(e) {
         e.stopPropagation()
     })
