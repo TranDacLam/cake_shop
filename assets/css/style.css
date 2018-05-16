@@ -205,6 +205,39 @@ footer ul li a{
 footer ul li a:hover{
     color: red;
 }
+.footer-facebook i, .footer-google i, .footer-youtube i{
+    width: 43px;
+    height: 43px;
+    font-size: 16px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 43px;
+    margin-right: 0.5rem;
+    color: #fff;
+}
+.footer-facebook i{
+    background: #3b579d;
+}
+.footer-google i{
+    background: #dc4a38;
+}
+.footer-youtube i{
+    background: #dc4a38;
+}
+
+.footer-bottom{
+    background-color: #616060;
+    text-align: center;
+}
+.footer-bottom p{
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+footer iframe{
+    height: 300px;
+}
+
 /* *** END FOOTER *** */
 
 .clear {
@@ -272,7 +305,24 @@ footer ul li a:hover{
 }
 /*** End breadcrumb ***/
 
+/*  ABOUT */
 
+.main-about{
+    width: 100%;
+}
+.main-about .about-info img{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.main-about .about-info{
+    margin-top: 40px;
+}
+.main-about .about-custom{
+    margin-bottom: 60px;
+}
+
+/* END ABOUT */
 
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
@@ -314,7 +364,23 @@ footer ul li a:hover{
     .navbar-nav>li.menu-search>.dropdown-menu{
         left: auto;
     }
-}
+    footer ul li{
+        margin-left: 0px;
+    }
+    .footer-facebook i, .footer-google i, .footer-youtube i {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 30px;
+        margin-right: 0px; 
+    }
+    footer{
+        padding-bottom: 30px;
+    }
+    footer iframe{
+        height: 160px;
+    }
  
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
@@ -423,6 +489,24 @@ footer ul li a:hover{
     }
     footer{
         margin-top: 15px;
+        padding-top: 10px;
+    }
+    footer iframe{
+        height: 200px;
+    }
+    .form-contact {
+        border-left: none;
+    }
+}
+@media only screen and (max-width : 414px) {
+    footer .footer-social ul{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width : 375px) {
+    footer .footer-social ul{
+        width: 60%;
     }
 }
  
@@ -431,5 +515,8 @@ footer ul li a:hover{
     #top-bar-wrap .top-bar-hotline,
     #top-bar-wrap .top-bar-social{
         font-size: 9px;
+    }
+    footer .footer-social ul {
+        width: 70%;
     }
 }

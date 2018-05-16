@@ -225,6 +225,13 @@
 #comments .media-heading{
     font-weight: 600;
 }
+.fb-share-button{
+    display: inline-block;
+    position: relative;
+}
+.post-social-block iframe{
+    margin-top: 5px;
+}
 
 @media (min-width: 992px){
 	.comment-item.comment-item--form {

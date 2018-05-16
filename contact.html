@@ -9,7 +9,7 @@
     <script src="assets/js/jquery.min.js" type="text/javascript"></script>
     <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
     <script type="text/javascript" src="assets/js/main.js"></script>
 </head>
 <body>
@@ -198,7 +198,7 @@
         </div>
     </nav>
 
-    <div class="main-blog">
+    <div class="main-contact">
         <div class="header-navigate clearfix mb15">
             <div class="container">
                 <div class="row">
@@ -206,108 +206,62 @@
                         <ol class="breadcrumb breadcrumb-arrow">
                             <li><a href="/" target="_self">Trang chủ</a></li>
                             <li><i class="fa fa-angle-right"></i></li>
-                            <li class="active"><span>Blog</span></li>
+                            <li class="active"><span>Liên hệ</span></li>
                         </ol>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container blog-custom">
-            <div class="blog-title">
-                <h1>BLOG</h1>
+        <div class="container contact-custom">
+            <div class="contact-title text-center">
+                <h1>LIÊN HỆ</h1>
             </div>
-            <div class='col-md-12'>
-                <div class="filter-blog">
-                    <label for="filter"><strong>Sắp xếp theo:</strong></label>
-                    <select class="select-filter" id="blog-filter">
-                        <option value="-created">Bài viết mới nhất</option>
-                        <option value="-hit_count_generic__hits">Xem nhiều nhất</option>
-                    </select>
+            <div class="row">
+                <div class="col-xs-5 col-sm-4 info-contact-custom">
+                    <div class="info-contact">
+                        <h3>LIÊN HỆ</h3>
+                        <p>Hotline: <span> +44 (0)161 832 5575</span></p>
+                        <p>Email: <span> enquiries@thechase.co.uk</span></p>
+                    </div>
+                    <div class="info-address">
+                        <h3>ĐỊA CHỈ</h3>
+                        <p>TẦNG 1 HELIO CENTER, ĐƯỜNG 2/9, HẢI CHÂU, ĐÀ NẴNG</p>
+                    </div>
+                </div>
+                <div class="col-xs-7 col-sm-7 col-md-7 form-contact">
+                    <form action="" method="POST" role="form">
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label col-md-offset-2">Họ và tên</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label  class="col-md-3 col-form-label col-md-offset-2">Địa chỉ email</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label  class="col-md-3 col-form-label col-md-offset-2">Số điện thoại</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label  class="col-md-3 col-form-label col-md-offset-2">Nội dung</label>
+                            <div class="col-md-7">
+                                <textarea name="" class="form-control" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="row text-center col-md-offset-5">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa fa-paper-plane"></i> Gửi liên hệ
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="clearfix"></div>
-            <article class="row blog-content">
-                <div class=" col-md-4 col-lg-4 col-sm-4">
-                    <div class="blog-item-image">
-                        <div class="blog-item">
-                            <a href="blog_detail.html">
-                                <p><img class="img-responsive" src="assets/images/blog3.jpg" /></p>
-                                <p class="blog-name">Ý nghĩa của chiếc bánh kem cưới</p>
-                                <p class="blog-decs">Hiện nay với những đám cưới hiện đại, ngoài lễ vật là các loại bánh truyền thống thì bánh...</p>
-                                <div class="clearfix"></div>
-                                <p class="blog-read-more">
-                                    <span>Xem thêm <i class="fas fa-long-arrow-alt-right"></i></span>
-                                </p>
-                            </a>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-                <div class=" col-md-4 col-lg-4 col-sm-4">
-                    <div class="blog-item-image">
-                        <div class="blog-item">
-                            <a href="blog_detail.html">
-                                <p><img class="img-responsive" src="assets/images/blog1.jpg" /></p>
-                                <p class="blog-name">14 quán kem ngon nhất châu Âu</p>
-                                <p class="blog-decs">Nói đến kỳ nghỉ, đặc biệt là nghỉ hè hẳn mọi người đều nghĩ đến những chiếc kem thơm...</p>
-                                <div class="clearfix"></div>
-                                <p class="blog-read-more">
-                                    <span>Xem thêm <i class="fas fa-long-arrow-alt-right"></i></span>
-                                </p>
-                            </a>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-                <div class=" col-md-4 col-lg-4 col-sm-4">
-                    <div class="blog-item-image">
-                        <div class="blog-item">
-                            <a href="blog_detail.html">
-                                <p><img class="img-responsive" src="assets/images/blog2.jpg" /></p>
-                                <p class="blog-name">Ý nghĩa của chiếc bánh kem cưới</p>
-                                <p class="blog-decs">Hiện nay với những đám cưới hiện đại, ngoài lễ vật là các loại bánh truyền thống thì bánh...</p>
-                                <div class="clearfix"></div>
-                                <p class="blog-read-more">
-                                    <span>Xem thêm <i class="fas fa-long-arrow-alt-right"></i></span>
-                                </p>
-                            </a>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-                <div class=" col-md-4 col-lg-4 col-sm-4">
-                    <div class="blog-item-image">
-                        <div class="blog-item">
-                            <a href="blog_detail.html">
-                                <p><img class="img-responsive" src="assets/images/blog2.jpg" /></p>
-                                <p class="blog-name">Những chiếc bánh sinh nhật độc đáo</p>
-                                <p class="blog-decs">Đối với nhiều người thì bánh sinh nhật không nhất thiết phải to và cầu kỳ quan trọng là nó...</p>
-                                <div class="clearfix"></div>
-                                <p class="blog-read-more">
-                                    <span>Xem thêm <i class="fas fa-long-arrow-alt-right"></i></span>
-                                </p>
-                            </a>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-                <div class=" col-md-4 col-lg-4 col-sm-4">
-                    <div class="blog-item-image">
-                        <div class="blog-item">
-                            <a href="blog_detail.html">
-                                <p><img class="img-responsive" src="assets/images/blog4.jpg" /></p>
-                                <p class="blog-name">Nguồn gốc và ý nghĩa của bánh kem</p>
-                                <p class="blog-decs">Ngày nay bánh kem trở thành quá quen thuộc đối với những bữa tiệc sinh nhật, tiệc cưới, đám hỏi,......</p>
-                                <div class="clearfix"></div>
-                                <p class="blog-read-more">
-                                    <span>Xem thêm <i class="fas fa-long-arrow-alt-right"></i></span>
-                                </p>
-                            </a>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </article>
         </div>
     </div>
 
